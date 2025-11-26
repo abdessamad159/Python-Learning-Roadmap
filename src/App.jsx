@@ -4,6 +4,7 @@ import { ProgressProvider } from './context/ProgressContext';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import StageDetail from './pages/StageDetail';
+import TopicDetail from './pages/TopicDetail';
 import Profile from './pages/Profile';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/stage/:id" element={<StageDetail />} />
+            <Route path="/stage/:stageId/topic/:topicId" element={<TopicDetail />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
         </Layout>

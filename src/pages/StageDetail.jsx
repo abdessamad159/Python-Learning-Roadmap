@@ -34,9 +34,51 @@ const StageDetail = () => {
           </h2>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {stage.topics.map((topic, idx) => (
-              <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', background: '#f8fafc', borderRadius: 'var(--radius)' }}>
-                <Circle size={20} color="#cbd5e1" />
-                <span style={{ fontSize: '1.1rem', fontWeight: '500' }}>{topic}</span>
+              <li key={idx}>
+                <Link 
+                  to={`/stage/${stage.id}/topic/${topic.id}`}
+                  style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '1rem', 
+                    padding: '1.5rem', 
+                    background: '#f8fafc', 
+                    borderRadius: 'var(--radius)',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    transition: 'all 0.2s',
+                    border: '1px solid transparent'
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.background = 'white';
+                    e.currentTarget.style.borderColor = 'var(--primary-color)';
+                    e.currentTarget.style.transform = 'translateX(-5px)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow)';
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.background = '#f8fafc';
+                    e.currentTarget.style.borderColor = 'transparent';
+                    e.currentTarget.style.transform = 'translateX(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  <div style={{ 
+                    background: 'var(--primary-color)', 
+                    color: 'white', 
+                    width: '32px', 
+                    height: '32px', 
+                    borderRadius: '50%', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center',
+                    fontWeight: 'bold',
+                    fontSize: '0.9rem'
+                  }}>
+                    {idx + 1}
+                  </div>
+                  <span style={{ fontSize: '1.2rem', fontWeight: '500', flex: 1 }}>{topic.title}</span>
+                  <ArrowLeft size={20} color="var(--primary-color)" style={{ transform: 'rotate(180deg)' }} />
+                </Link>
               </li>
             ))}
           </ul>
