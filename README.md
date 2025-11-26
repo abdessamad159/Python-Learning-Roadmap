@@ -614,7 +614,7 @@ git push origin feature/AmazingFeature
 
 <div align="center">
 
-## 💝 صنع بـ ❤️ لمجتمع المطورين العرب
+## 💝 abdessamad159 صنع بـ ❤️ المطور 
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=%E2%AD%90+%D8%A5%D8%B0%D8%A7+%D8%A3%D8%B9%D8%AC%D8%A8%D9%83+%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%8C+%D8%A3%D8%B9%D8%B7%D9%87+%D9%86%D8%AC%D9%85%D8%A9!+%E2%AD%90;%F0%9F%9A%80+%D8%A7%D8%A8%D8%AF%D8%A3+%D8%B1%D8%AD%D9%84%D8%AA%D9%83+%D9%85%D8%B9+Python+%D8%A7%D9%84%D9%8A%D9%88%D9%85!+%F0%9F%9A%80" alt="Typing SVG" />
 
