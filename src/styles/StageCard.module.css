@@ -1,0 +1,89 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover:not(.locked) {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  border-color: var(--primary-color);
+}
+
+.locked {
+  opacity: 0.7;
+  background-color: #f1f5f9;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stageNumber {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.description {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-align: center;
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.buttonDisabled {
+  background-color: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  width: fit-content;
+  margin-top: 0.5rem;
+}

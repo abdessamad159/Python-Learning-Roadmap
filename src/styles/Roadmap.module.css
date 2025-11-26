@@ -1,0 +1,43 @@
+.roadmap {
+  position: relative;
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Vertical line connecting stages */
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2rem; /* Adjusted for RTL layout - line on the right */
+  width: 4px;
+  background-color: #e2e8f0;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.stageWrapper {
+  position: relative;
+  padding-right: 4rem; /* Space for the line/connector */
+}
+
+.connector {
+  position: absolute;
+  top: 2rem;
+  right: 1.9rem; /* Align with line */
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--white);
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 2;
+}
