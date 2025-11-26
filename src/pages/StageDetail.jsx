@@ -1,10 +1,13 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { stages } from '../data/stages';
-import { ArrowLeft, CheckCircle, Circle, BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useProgress } from '../context/ProgressContext';
+import { ArrowLeft, CheckCircle, Circle, BookOpen, Trophy } from 'lucide-react';
 
 const StageDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const { stages, completeStage } = useProgress();
+  const [showSuccess, setShowSuccess] = useState(false);
   const stage = stages.find(s => s.id === parseInt(id));
 
   if (!stage) {
@@ -39,20 +42,68 @@ const StageDetail = () => {
           </ul>
         </section>
 
-        <section style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <button style={{ 
-            background: 'var(--primary-color)', 
+        {showSuccess && (
+          <section style={{ 
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
             color: 'white', 
-            padding: '1rem 2rem', 
-            fontSize: '1.1rem', 
+            padding: '2rem', 
             borderRadius: 'var(--radius)',
-            fontWeight: '600',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem'
+            textAlign: 'center',
+            marginBottom: '2rem',
+            animation: 'slideDown 0.5s ease-out'
           }}>
-            ابدأ الاختبار النهائي
-          </button>
+            <Trophy size={48} style={{ marginBottom: '1rem' }} />
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>🎉 أحسنت! لقد أكملت هذه المرحلة</h3>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9 }}>المرحلة التالية متاحة الآن</p>
+          </section>
+        )}
+
+        <section style={{ textAlign: 'center', marginTop: '2rem' }}>
+          {stage.status === 'completed' ? (
+            <div style={{ 
+              background: '#10b981', 
+              color: 'white', 
+              padding: '1rem 2rem', 
+              fontSize: '1.1rem', 
+              borderRadius: 'var(--radius)',
+              fontWeight: '600',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              <CheckCircle size={24} />
+              تم إكمال هذه المرحلة
+            </div>
+          ) : (
+            <button 
+              onClick={() => {
+                completeStage(stage.id);
+                setShowSuccess(true);
+                setTimeout(() => {
+                  navigate('/');
+                }, 2500);
+              }}
+              style={{ 
+                background: 'var(--primary-color)', 
+                color: 'white', 
+                padding: '1rem 2rem', 
+                fontSize: '1.1rem', 
+                borderRadius: 'var(--radius)',
+                fontWeight: '600',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                cursor: 'pointer',
+                border: 'none',
+                transition: 'transform 0.2s',
+              }}
+              onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+              onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+            >
+              <Trophy size={20} />
+              إكمال المرحلة
+            </button>
+          )}
         </section>
       </div>
     </div>

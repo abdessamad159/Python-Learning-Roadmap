@@ -1,9 +1,11 @@
 import React from 'react';
 import StageCard from './StageCard';
-import { stages } from '../data/stages';
+import { useProgress } from '../context/ProgressContext';
 import styles from '../styles/Roadmap.module.css';
 
 const Roadmap = () => {
+  const { stages } = useProgress();
+  
   return (
     <div className={styles.roadmap}>
       <div className={styles.line}></div>
