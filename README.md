@@ -191,375 +191,6 @@ python-roadmap/
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🎓 المراحل التعليمية
-
-<div align="center">
-
-```mermaid
-graph LR
-    A["🎯 المرحلة 0<br/>التحضير"] --> B["📚 المرحلة 1<br/>الأساسيات"]
-    B --> C["🗂️ المرحلة 2<br/>هياكل البيانات"]
-    C --> D["⚙️ المرحلة 3<br/>الدوال"]
-    D --> E["🏗️ المرحلة 4<br/>OOP"]
-    
-    style A fill:#a855f7,stroke:#7c3aed,color:#fff
-    style B fill:#3b82f6,stroke:#2563eb,color:#fff
-    style C fill:#10b981,stroke:#059669,color:#fff
-    style D fill:#f59e0b,stroke:#d97706,color:#fff
-    style E fill:#ef4444,stroke:#dc2626,color:#fff
-```
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 المرحلة 0: التحضير والإعداد
-```python
-# ابدأ رحلتك هنا!
-print("Hello, Python!")
-```
-- 📖 مقدمة عن البرمجة
-- 🐍 لماذا Python؟
-- 💾 تثبيت Python
-- 🖥️ اختيار المحرر (VS Code)
-- ✨ كتابة أول برنامج
-
-</td>
-<td width="50%">
-
-### 📚 المرحلة 1: أساسيات Python
-```python
-# تعلم الأساسيات
-name = "مبرمج"
-if name:
-    print(f"مرحباً {name}")
-```
-- 📦 المتغيرات وأنواع البيانات
-- ➕ العمليات الحسابية
-- 🔀 الشروط (if/else)
-- 🔄 الحلقات (Loops)
-- 🎯 الدوال الأساسية
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🗂️ المرحلة 2: هياكل البيانات
-```python
-# نظم بياناتك
-students = ["أحمد", "فاطمة"]
-scores = {"أحمد": 95}
-```
-- 📋 القوائم (Lists)
-- 📖 القواميس (Dictionaries)
-- 🎯 المجموعات (Sets)
-- 📌 Tuples
-- ⚡ List Comprehensions
-
-</td>
-<td width="50%">
-
-### ⚙️ المرحلة 3: الدوال والوحدات
-```python
-# اكتب كود نظيف
-def greet(name):
-    return f"أهلاً {name}"
-```
-- 🎯 تعريف الدوال
-- 📥 المعاملات
-- 🔍 Scope
-- ⚡ Lambda Functions
-- 📦 استيراد الوحدات
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-### 🏗️ المرحلة 4: البرمجة الكائنية (OOP)
-```python
-# نمذج العالم الحقيقي
-class Student:
-    def __init__(self, name):
-        self.name = name
-    
-    def study(self):
-        return f"{self.name} يدرس Python"
-```
-- 🏛️ Classes & Objects
-- 👨‍👩‍👧 Inheritance
-- 🔒 Encapsulation
-- 🎭 Polymorphism
-
-</td>
-</tr>
-</table>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🎨 المميزات التصميمية
-
-<div align="center">
-
-| 🎨 العنصر | 📝 الوصف | 🛠️ التقنية |
-|:----------|:---------|:-----------|
-| 🌈 **تدرجات لونية** | استخدام تدرجات أرجوانية وزرقاء جذابة | CSS Gradients |
-| 💎 **Glassmorphism** | تصميم زجاجي عصري وشفاف | backdrop-filter |
-| ✨ **رسوم متحركة** | انتقالات وحركات طبيعية وسلسة | Framer Motion |
-| 📱 **تصميم متجاوب** | يتكيف مع جميع أحجام الشاشات | Media Queries |
-| 🎯 **أيقونات تعبيرية** | أيقونات واضحة ومعبرة | Lucide Icons |
-| 🌙 **Dark Mode** | وضع داكن مريح للعين | CSS Variables |
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🤝 المساهمة
-
-<div align="center">
-
-### 💪 نرحب بمساهماتك!
-
-<img src="https://contrib.rocks/image?repo=abdessamad159/Python-Learning-Roadmap" />
-
-</div>
-
-المساهمات مرحب بها دائماً! إذا كنت ترغب في المساهمة:
-
-```bash
-# 1️⃣ Fork المشروع
-# 2️⃣ أنشئ فرع للميزة الجديدة
-git checkout -b feature/AmazingFeature
-
-# 3️⃣ Commit التغييرات
-git commit -m 'Add some AmazingFeature'
-
-# 4️⃣ Push إلى الفرع
-git push origin feature/AmazingFeature
-
-# 5️⃣ افتح Pull Request
-```
-
-<div align="center">
-
-### 🌟 أنواع المساهمات المرحب بها
-
-| النوع | الوصف |
-|:-----:|:------|
-| 🐛 | إصلاح الأخطاء (Bug Fixes) |
-| ✨ | ميزات جديدة (New Features) |
-| 📝 | تحسين التوثيق (Documentation) |
-| 🎨 | تحسينات التصميم (UI/UX) |
-| ⚡ | تحسين الأداء (Performance) |
-| 🌐 | الترجمة (Translation) |
-
-</div>
-
-## 📝 الترخيص
-
-هذا المشروع مرخص تحت رخصة MIT - انظر ملف [LICENSE](LICENSE) للتفاصيل.
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 👨‍💻 المطور
-
-<div align="center">
-
-<img src="https://github.com/abdessamad159.png" width="150" style="border-radius: 50%; border: 3px solid #a855f7;" />
-
-### **Abdessamad**
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdessamad159)
-[![Repository](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdessamad159/Python-Learning-Roadmap)
-```
-│   ├── data/               # البيانات
-│   │   └── stages.js       # بيانات المراحل التعليمية
-│   ├── styles/             # ملفات الأنماط
-│   ├── App.jsx             # المكون الرئيسي
-│   └── main.jsx            # نقطة الدخول
-├── index.html              # ملف HTML الرئيسي
-├── vite.config.js          # إعدادات Vite
-└── package.json            # معلومات المشروع والحزم
-```
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🎓 المراحل التعليمية
-
-<div align="center">
-
-```mermaid
-graph LR
-    A["🎯 المرحلة 0<br/>التحضير"] --> B["📚 المرحلة 1<br/>الأساسيات"]
-    B --> C["🗂️ المرحلة 2<br/>هياكل البيانات"]
-    C --> D["⚙️ المرحلة 3<br/>الدوال"]
-    D --> E["🏗️ المرحلة 4<br/>OOP"]
-    
-    style A fill:#a855f7,stroke:#7c3aed,color:#fff
-    style B fill:#3b82f6,stroke:#2563eb,color:#fff
-    style C fill:#10b981,stroke:#059669,color:#fff
-    style D fill:#f59e0b,stroke:#d97706,color:#fff
-    style E fill:#ef4444,stroke:#dc2626,color:#fff
-```
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 المرحلة 0: التحضير والإعداد
-```python
-# ابدأ رحلتك هنا!
-print("Hello, Python!")
-```
-- 📖 مقدمة عن البرمجة
-- 🐍 لماذا Python؟
-- 💾 تثبيت Python
-- 🖥️ اختيار المحرر (VS Code)
-- ✨ كتابة أول برنامج
-
-</td>
-<td width="50%">
-
-### 📚 المرحلة 1: أساسيات Python
-```python
-# تعلم الأساسيات
-name = "مبرمج"
-if name:
-    print(f"مرحباً {name}")
-```
-- 📦 المتغيرات وأنواع البيانات
-- ➕ العمليات الحسابية
-- 🔀 الشروط (if/else)
-- 🔄 الحلقات (Loops)
-- 🎯 الدوال الأساسية
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🗂️ المرحلة 2: هياكل البيانات
-```python
-# نظم بياناتك
-students = ["أحمد", "فاطمة"]
-scores = {"أحمد": 95}
-```
-- 📋 القوائم (Lists)
-- 📖 القواميس (Dictionaries)
-- 🎯 المجموعات (Sets)
-- 📌 Tuples
-- ⚡ List Comprehensions
-
-</td>
-<td width="50%">
-
-### ⚙️ المرحلة 3: الدوال والوحدات
-```python
-# اكتب كود نظيف
-def greet(name):
-    return f"أهلاً {name}"
-```
-- 🎯 تعريف الدوال
-- 📥 المعاملات
-- 🔍 Scope
-- ⚡ Lambda Functions
-- 📦 استيراد الوحدات
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-### 🏗️ المرحلة 4: البرمجة الكائنية (OOP)
-```python
-# نمذج العالم الحقيقي
-class Student:
-    def __init__(self, name):
-        self.name = name
-    
-    def study(self):
-        return f"{self.name} يدرس Python"
-```
-- 🏛️ Classes & Objects
-- 👨‍👩‍👧 Inheritance
-- 🔒 Encapsulation
-- 🎭 Polymorphism
-
-</td>
-</tr>
-</table>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🎨 المميزات التصميمية
-
-<div align="center">
-
-| 🎨 العنصر | 📝 الوصف | 🛠️ التقنية |
-|:----------|:---------|:-----------|
-| 🌈 **تدرجات لونية** | استخدام تدرجات أرجوانية وزرقاء جذابة | CSS Gradients |
-| 💎 **Glassmorphism** | تصميم زجاجي عصري وشفاف | backdrop-filter |
-| ✨ **رسوم متحركة** | انتقالات وحركات طبيعية وسلسة | Framer Motion |
-| 📱 **تصميم متجاوب** | يتكيف مع جميع أحجام الشاشات | Media Queries |
-| 🎯 **أيقونات تعبيرية** | أيقونات واضحة ومعبرة | Lucide Icons |
-| 🌙 **Dark Mode** | وضع داكن مريح للعين | CSS Variables |
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🤝 المساهمة
-
-<div align="center">
-
-### 💪 نرحب بمساهماتك!
-
-<img src="https://contrib.rocks/image?repo=abdessamad159/Python-Learning-Roadmap" />
-
-</div>
-
-المساهمات مرحب بها دائماً! إذا كنت ترغب في المساهمة:
-
-```bash
-# 1️⃣ Fork المشروع
-# 2️⃣ أنشئ فرع للميزة الجديدة
-git checkout -b feature/AmazingFeature
-
-# 3️⃣ Commit التغييرات
-git commit -m 'Add some AmazingFeature'
-
-# 4️⃣ Push إلى الفرع
-git push origin feature/AmazingFeature
-
-# 5️⃣ افتح Pull Request
-```
-
-<div align="center">
-
-### 🌟 أنواع المساهمات المرحب بها
-
-| النوع | الوصف |
-|:-----:|:------|
-| 🐛 | إصلاح الأخطاء (Bug Fixes) |
-| ✨ | ميزات جديدة (New Features) |
-| 📝 | تحسين التوثيق (Documentation) |
-| 🎨 | تحسينات التصميم (UI/UX) |
-| ⚡ | تحسين الأداء (Performance) |
-| 🌐 | الترجمة (Translation) |
-
-</div>
-
-## 📝 الترخيص
-
-هذا المشروع مرخص تحت رخصة MIT - انظر ملف [LICENSE](LICENSE) للتفاصيل.
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 ## 👨‍💻 المطور
 
 <div align="center">
